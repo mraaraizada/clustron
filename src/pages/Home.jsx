@@ -35,9 +35,9 @@ export default function Home() {
               backgroundClip: 'text'
             }}
           >
-            AI-Powered Customer
+            Customer Segmentation
             <br />
-            Segmentation Platform
+            Platform
           </motion.h1>
 
           {/* Subtitle */}
