@@ -21,6 +21,20 @@ CORS(app, origins=cors_origins)
 
 DATA_PATH = os.path.join(os.path.dirname(__file__), 'realistic_customers.csv')
 
+@app.route('/', methods=['GET'])
+def root():
+    return jsonify({
+        'message': 'Clustron API',
+        'version': '1.0.0',
+        'endpoints': {
+            'health': '/api/health',
+            'cluster': '/api/cluster (POST)',
+            'elbow': '/api/elbow',
+            'segments': '/api/segments',
+            'data_preview': '/api/data/preview'
+        }
+    })
+
 @app.route('/api/health', methods=['GET'])
 def health():
     return jsonify({'status': 'ok', 'message': 'Customer Segmentation API is running'})
@@ -188,7 +202,11 @@ def data_preview():
 
 if __name__ == '__main__':
     port = int(os.getenv('PORT', 5001))
-    host = os.getenv('HOST', '127.0.0.1')
+    host = os.getenv('HOST', '0.0.0.0')
     debug = os.getenv('FLASK_ENV', 'development') == 'development'
+    
+    print(f"Starting Flask app on {host}:{port}")
+    print(f"Debug mode: {debug}")
+    print(f"CORS origins: {cors_origins}")
     
     app.run(debug=debug, port=port, host=host)
