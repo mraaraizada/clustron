@@ -1,8 +1,7 @@
 services:
   - type: web
     name: clustron-api
-    env: python
-    region: oregon
+    runtime: python
     plan: free
     buildCommand: "cd backend && pip install --upgrade pip setuptools wheel && pip install --no-cache-dir -r requirements.txt"
     startCommand: "cd backend && gunicorn --bind 0.0.0.0:$PORT api:app"
