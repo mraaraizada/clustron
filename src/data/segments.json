@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Platinum Customers",
+    "tag": "Champions",
+    "color": "#7C3AED",
+    "bgColor": "rgba(124,58,237,0.1)",
+    "count": 1240,
+    "trend": "+12%",
+    "trendUp": true,
+    "description": "Highest value, most recent, most frequent buyers",
+    "data": [30, 45, 40, 60, 55, 75, 80]
+  },
+  {
+    "id": 2,
+    "name": "Very Loyal",
+    "tag": "Loyal Customers",
+    "color": "#9333EA",
+    "bgColor": "rgba(147,51,234,0.1)",
+    "count": 2870,
+    "trend": "+8%",
+    "trendUp": true,
+    "description": "Buy regularly with high frequency",
+    "data": [40, 50, 45, 65, 60, 70, 72]
+  },
+  {
+    "id": 3,
+    "name": "Potential",
+    "tag": "Potential Loyalists",
+    "color": "#A855F7",
+    "bgColor": "rgba(168,85,247,0.1)",
+    "count": 3410,
+    "trend": "+15%",
+    "trendUp": true,
+    "description": "Recent customers with average frequency",
+    "data": [20, 35, 30, 50, 45, 60, 65]
+  },
+  {
+    "id": 4,
+    "name": "Late Bloomers",
+    "tag": "Promising",
+    "color": "#6366F1",
+    "bgColor": "rgba(99,102,241,0.1)",
+    "count": 1890,
+    "trend": "+5%",
+    "trendUp": true,
+    "description": "Recently active, low frequency buyers",
+    "data": [15, 20, 25, 30, 35, 42, 48]
+  },
+  {
+    "id": 5,
+    "name": "High Risk",
+    "tag": "At Risk",
+    "color": "#EC4899",
+    "bgColor": "rgba(236,72,153,0.1)",
+    "count": 2150,
+    "trend": "-3%",
+    "trendUp": false,
+    "description": "Were once valuable, now losing activity",
+    "data": [70, 65, 55, 50, 42, 38, 32]
+  },
+  {
+    "id": 6,
+    "name": "Lost Customers",
+    "tag": "Churned",
+    "color": "#EF4444",
+    "bgColor": "rgba(239,68,68,0.1)",
+    "count": 980,
+    "trend": "-8%",
+    "trendUp": false,
+    "description": "Low recency, frequency, and monetary",
+    "data": [80, 72, 65, 55, 40, 30, 20]
+  }
+]
