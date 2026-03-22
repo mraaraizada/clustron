@@ -36,8 +36,6 @@ export default function Home() {
             }}
           >
             Customer Segmentation
-            <br />
-            Platform
           </motion.h1>
 
           {/* Subtitle */}
