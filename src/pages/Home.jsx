@@ -36,6 +36,8 @@ export default function Home() {
             }}
           >
             Customer Segmentation
+            <br />
+            Analysis Dashboard
           </motion.h1>
 
           {/* Subtitle */}
